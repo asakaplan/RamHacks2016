@@ -1,0 +1,21 @@
+from PIL import Image
+from random import random
+import os
+files = [f for f in os.listdir('source/') if os.path.isfile(f)]
+outText = open("elephant.txt",'w')
+if not os.path.exists("targets/"):
+    os.makedirs("targets/")
+for f in files:
+	if not ".jpg" in f:continue
+	width = 80 + int(random()*80)
+	height = 80 + int(random()*80)
+	
+	im = Image.open(f)
+	imWidth, imHeight = im.size
+	x = int(random()*(imWidth-width))
+	y = int(random()*(imHeight-height))
+	
+	img2 = im.crop((x,y,x+width, y+width))
+	img2.save("targets/" + f)
+	outText.write("targets/" + f + "\n")
+		
