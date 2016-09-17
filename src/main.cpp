@@ -1,6 +1,6 @@
 #include <map>
 #include <iostream>
-#include <curl.h>
+#include <curl/curl.h>
 
 #define INF 1000000000
 int main(int argc, char **argv)
@@ -15,15 +15,15 @@ int main(int argc, char **argv)
        curl_easy_cleanup (curl);
     }
     std::map<int, int> m;
-	numSubImages = 50;
-	subImages[numSubImages][100][100];
-	minLength = INF;
-	for(i=0;i<numSubImages;i++){
+	int numSubImages = 50;
+	int subImages[numSubImages][100][100];
+	int minLength = INF;
+	for(int i=0;i<numSubImages;i++){
 		//TODO: Resolve size(i)
-		if(size(i)<minLength){
+		/*if(size(i)<minLength){
 			minLength = size(i)
-		}
+		}*/
 	}
-	lineNumber[numSubImages];
-	hashSubImages[numSubImages];
+	//lineNumber[numSubImages];
+	//hashSubImages[numSubImages];
 }
