@@ -13,8 +13,8 @@ for f in files:
 	
 	im = Image.open("source/"+f)
 	imWidth, imHeight = im.size
-	x = int(random()*(imWidth-width))
-	y = int(random()*(imHeight-height))
+	x = 0#int(random()*(imWidth-width))
+	y = 0#int(random()*(imHeight-height))
 	
 	img2 = im.crop((x,y,x+width, y+width))
 	img2.save("targets/" + f[:-3] + "png" )
