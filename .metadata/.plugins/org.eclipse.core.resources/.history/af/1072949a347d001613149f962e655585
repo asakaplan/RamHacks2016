@@ -1,0 +1,17 @@
+//============================================================================
+// Name        : loadpng.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#define cimg_display 0
+#include "CImg.h"
+#include <iostream>
+using namespace cimg_library;
+
+int main() {
+	CImg<float> image("/Users/Charlie/Documents/RamHacks2016/loadpng/src/example.png");
+	CImgDisplay main_disp(image);
+}
