@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="202" y="24">
+<window height="825" width="1440" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -32,11 +32,12 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="loadpng.cpp" partName="loadpng.cpp" path="/Users/Charlie/Documents/RamHacks2016/loadpng/src/loadpng.cpp" title="loadpng.cpp" tooltip="loadpng/src/loadpng.cpp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="loadpng.cpp" partName="loadpng.cpp" path="/Users/Charlie/Documents/RamHacks2016/loadpng/src/loadpng.cpp" title="loadpng.cpp" tooltip="loadpng/src/loadpng.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/loadpng/src/loadpng.cpp"/>
 <editorState selectionHorizontalPixel="0" selectionLength="181" selectionOffset="310" selectionTopPixel="0"/>
 </editor>
@@ -47,6 +48,10 @@
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="CImg.h" partName="CImg.h" title="CImg.h" tooltip="/usr/local/Cellar/cimg/1.6.9/include/CImg.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="/usr/local/Cellar/cimg/1.6.9/include/CImg.h" project="loadpng"/>
 <editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="8923" selectionTopPixel="3413"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" title="main.cpp" tooltip="/Users/Charlie/Documents/RamHacks2016/src/main.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Charlie/Documents/RamHacks2016/src/main.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="2542" selectionTopPixel="56"/>
 </editor>
 </editors>
 <views>
@@ -157,8 +162,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.56764704" ratioLeft="386" ratioRight="294" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.13715886" ratioLeft="196" ratioRight="1233" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.95735294" ratioLeft="651" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -196,6 +201,8 @@
 <editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/usr/local/Cellar/cimg/1.6.9/include/CImg.h" project="loadpng"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/loadpng/src/loadpng.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/loadpng/src/loadpng.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/loadpng/src/loadpng.cpp"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/Users/Charlie/Documents/RamHacks2016/src/main.cpp"/>
 </editors>
 <item historyLabel="loadpng.cpp" index="0">
 <position info="not_deleted" x="533" y="0"/>
@@ -251,8 +258,14 @@
 <item historyLabel="loadpng.cpp" index="4">
 <position info="not_deleted" x="443" y="0"/>
 </item>
-<item active="true" historyLabel="makefile" index="1">
+<item historyLabel="makefile" index="1">
 <position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="loadpng.cpp" index="5">
+<position info="not_deleted" x="310" y="181"/>
+</item>
+<item active="true" historyLabel="main.cpp" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -271,6 +284,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="/Users/Charlie/Documents/RamHacks2016/src/main.cpp">
+<persistable uri="file:/Users/Charlie/Documents/RamHacks2016/src/main.cpp"/>
+</file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CImg.h" tooltip="/usr/local/Cellar/cimg/1.6.9/include/CImg.h">
 <persistable path="/usr/local/Cellar/cimg/1.6.9/include/CImg.h" project="loadpng"/>
 </file>
