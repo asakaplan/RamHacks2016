@@ -10,7 +10,7 @@ using namespace std;
 using namespace Magick;
 
 
-int numSubImages = 29;
+int numSubImages = 28;
 int* lineNumber;//[numSubImages];
 int*** subImages;//[numSubImages][100][100];
 int** dimSub;//[numSubImages][2];
@@ -21,8 +21,9 @@ int main(int argc, char **argv)
 	InitializeMagick(*argv);
 	lineNumber = new int[numSubImages];
 	subImages = new int**[numSubImages];
-	string* imageNamesTarget = new string[numSubImages]{"targets/177193_orig.jpg","targets/1899165_orig.jpg","targets/2424954_orig.jpg","targets/3070528_orig.jpg","targets/3200588_orig.jpg","targets/3246675_orig.jpg","targets/3276680_orig.jpg","targets/4532418_orig.jpg","targets/5168782_orig.jpg","targets/5215015_orig.jpg","targets/6244913_orig.jpg","targets/7344429_orig.jpg","targets/7543724_orig.jpg","targets/7702229_orig.jpg","targets/7915429_orig.jpg","targets/7925109_orig (1).jpg","targets/7925109_orig.jpg","targets/8301660_orig.jpg","targets/9024148_orig.jpg","targets/9797938_orig.jpg","targets/Ebner-LTRs-1943-04-27-to-Mom-1-Version-2-e1371745673560.jpg","targets/Letter-to-TFI-500x646.jpg","targets/Letters-to-Home-2history-500x655.jpg","targets/RC2b1f11 salvage 1.jpg","targets/Thumbs.db","targets/firstimage.jpg","targets/g1941Jul00A.jpg","targets/uaa-hmc-0814-p1.jpg","targets/wwiilett.jpg"};
-	string* imageNameSources = new string[numSubImages]{"source/177193_orig.jpg","source/1899165_orig.jpg","source/2424954_orig.jpg","source/3070528_orig.jpg","source/3200588_orig.jpg","source/3246675_orig.jpg","source/3276680_orig.jpg","source/4532418_orig.jpg","source/5168782_orig.jpg","source/5215015_orig.jpg","source/6244913_orig.jpg","source/7344429_orig.jpg","source/7543724_orig.jpg","source/7702229_orig.jpg","source/7915429_orig.jpg","source/7925109_orig (1).jpg","source/7925109_orig.jpg","source/8301660_orig.jpg","source/9024148_orig.jpg","source/9797938_orig.jpg","source/Ebner-LTRs-1943-04-27-to-Mom-1-Version-2-e1371745673560.jpg","source/Letter-to-TFI-500x646.jpg","source/Letters-to-Home-2history-500x655.jpg","source/RC2b1f11 salvage 1.jpg","source/Thumbs.db","source/firstimage.jpg","source/g1941Jul00A.jpg","source/uaa-hmc-0814-p1.jpg","source/wwiilett.jpg"};
+	string* imageNamesTarget = new string[numSubImages]{"targets/177193_orig.png","targets/1899165_orig.png","targets/2424954_orig.png","targets/3070528_orig.png","targets/3200588_orig.png","targets/3246675_orig.png","targets/3276680_orig.png","targets/4532418_orig.png","targets/5168782_orig.png","targets/5215015_orig.png","targets/6244913_orig.png","targets/7344429_orig.png","targets/7543724_orig.png","targets/7702229_orig.png","targets/7915429_orig.png","targets/7925109_orig (1).png","targets/7925109_orig.png","targets/8301660_orig.png","targets/9024148_orig.png","targets/9797938_orig.png","targets/Ebner-LTRs-1943-04-27-to-Mom-1-Version-2-e1371745673560.png","targets/Letter-to-TFI-500x646.png","targets/Letters-to-Home-2history-500x655.png","targets/RC2b1f11 salvage 1.png","targets/firstimage.png","targets/g1941Jul00A.png","targets/uaa-hmc-0814-p1.png","targets/wwiilett.png"};
+	string* imageNameSources = new string[numSubImages]
+{"source/177193_orig.jpg","source/1899165_orig.jpg","source/2424954_orig.jpg","source/3070528_orig.jpg","source/3200588_orig.jpg","source/3246675_orig.jpg","source/3276680_orig.jpg","source/4532418_orig.jpg","source/5168782_orig.jpg","source/5215015_orig.jpg","source/6244913_orig.jpg","source/7344429_orig.jpg","source/7543724_orig.jpg","source/7702229_orig.jpg","source/7915429_orig.jpg","source/7925109_orig (1).jpg","source/7925109_orig.jpg","source/8301660_orig.jpg","source/9024148_orig.jpg","source/9797938_orig.jpg","source/Ebner-LTRs-1943-04-27-to-Mom-1-Version-2-e1371745673560.jpg","source/Letter-to-TFI-500x646.jpg","source/Letters-to-Home-2history-500x655.jpg","source/RC2b1f11 salvage 1.jpg","source/firstimage.jpg","source/g1941Jul00A.jpg","source/uaa-hmc-0814-p1.jpg","source/wwiilett.jpg"}
 	for(int i = 0;i<numSubImages;i++){
 		Image image;
 		image.read(imageNamesTarget[i]);
