@@ -17,6 +17,6 @@ for f in files:
 	y = 0#int(random()*(imHeight-height))
 	
 	img2 = im.crop((x,y,x+width, y+width))
-	img2.save("targets/" + f[:-3] + "png" )
+	img2.save("targets/" + f[:-3] + "png" , 'PNG')
 	outText.write("targets/" + f[:-3] + "png" + "\n")
 		
