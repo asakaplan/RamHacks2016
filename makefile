@@ -1,6 +1,5 @@
 OPT=
 CXXFLAGS=$(OPT) -c -g -O2 -Wall -std=c++11
-LDFLAGS=-lcurl
 
 SOURCES=$(shell find src -name "*.cpp")
 OBJECTS:=$(SOURCES:src/%.cpp=build/%.o)
