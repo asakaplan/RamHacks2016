@@ -12,11 +12,13 @@ for f in files:
 	height = 80 + int(random()*80)
 	
 	im = Image.open("source/"+f)
-	imWidth, imHeight = im.size
+	im2 = Image.new("RGB", im.size, (255,255,255))
+	im2.paste(im)
+	imWidth, imHeight = im2.size
 	x = 0#int(random()*(imWidth-width))
 	y = 0#int(random()*(imHeight-height))
 	
-	img2 = im.crop((x,y,x+width, y+width))
+	img2 = im2.crop((x,y,x+width, y+width))
 	img2.save("targets/" + f[:-3] + "png" , 'PNG')
 	outText.write("targets/" + f[:-3] + "png" + "\n")
 		
