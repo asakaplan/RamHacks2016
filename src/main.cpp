@@ -1,6 +1,7 @@
 #include <map>
 #include <iostream>
 #include <stdlib.h>
+#include <Magick++.h>
 #include "main.h"
 #define INF 1000000000
 
@@ -12,6 +13,7 @@ std::map<int, int> hashSubImages;
 
 int main(int argc, char **argv)
 {	
+
 	lineNumber = new int[numSubImages];
 	subImages = new int**[numSubImages];
 	for(int i = 0;i<numSubImages;i++){

@@ -1,5 +1,6 @@
-OPT=
+OPT=`Magick++-config --cxxflags --cppflags`
 CXXFLAGS=$(OPT) -c -g -O2 -Wall -std=c++11
+LDFLAGS=`Magick++-config --ldflags --libs`
 
 SOURCES=$(shell find src -name "*.cpp")
 OBJECTS:=$(SOURCES:src/%.cpp=build/%.o)
