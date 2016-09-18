@@ -1,7 +1,8 @@
 from PIL import Image
 from random import random
 import os
-files = [f for f in os.listdir('source/') if os.path.isfile(f)]
+files = [f for f in os.listdir('source/') if os.path.isfile("source/"+f)]
+print(files)
 outText = open("elephant.txt",'w')
 if not os.path.exists("targets/"):
     os.makedirs("targets/")
@@ -10,7 +11,7 @@ for f in files:
 	width = 80 + int(random()*80)
 	height = 80 + int(random()*80)
 	
-	im = Image.open(f)
+	im = Image.open("source/"+f)
 	imWidth, imHeight = im.size
 	x = int(random()*(imWidth-width))
 	y = int(random()*(imHeight-height))
